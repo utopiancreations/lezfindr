@@ -108,6 +108,17 @@ flowchart LR
 | Deployed applications | 4 |
 | Engineers | **1** |
 
+## 🧑‍💻 Code Samples
+
+Hand-picked, sanitized excerpts of production code — real style, real decisions, annotated inline:
+
+- [`chat-room.ts`](code-samples/api/chat-room.ts) — the Durable Object powering chat **and** WebRTC call signaling, with hibernation-safe broadcasting
+- [`auth-middleware.ts`](code-samples/api/auth-middleware.ts) — edge JWT verification against Firebase JWKS (`jose`), zero network I/O in the warm path
+- [`discovery-nearby.ts`](code-samples/api/discovery-nearby.ts) — the PostGIS discovery query: composable SQL filters and safety gates in the `WHERE` clause
+- [`nearby_bloc.dart`](code-samples/app/nearby_bloc.dart) — a production Flutter BLoC: user-keyed caching, cursor pagination with dedupe, optimistic swipes
+
+**[Browse all samples →](code-samples/)**
+
 ## 📚 Documentation
 
 | Doc | What's inside |
